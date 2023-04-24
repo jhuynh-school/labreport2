@@ -34,7 +34,8 @@ The bug, as the before-and-after code change required to fix it
 - Before
 
 ---
-`static double averageWithoutLowest(double[] arr) {
+```
+static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
     for(double num: arr) {
@@ -46,14 +47,15 @@ The bug, as the before-and-after code change required to fix it
     }
     
     return (sum) / (arr.length - 1);
-  }`
+  }
+```
   
  ---
   
  - After
 
 ---
-`
+```
  static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -67,7 +69,7 @@ The bug, as the before-and-after code change required to fix it
     
     return (sum - lowest) / (arr.length - 1);
   }
-`
+```
 ---
 
 ## Part 3:
