@@ -2,7 +2,8 @@
 
 ## Part 2: averageWithoutLowest
 ---
-A failure-inducing input for the buggy program, as a JUnit test and any associated code
+
+- A failure-inducing input for the buggy program, as a JUnit test and any associated code
 
 ---
 `@Test
@@ -10,8 +11,9 @@ A failure-inducing input for the buggy program, as a JUnit test and any associat
     double[] input1 = {5, 5, 5};
     assertEquals(5, ArrayExamples.averageWithoutLowest(input1), 0.001);
   }`
- ---
-An input that doesn’t induce a failure, as a JUnit test and any associated code
+---
+ 
+- An input that doesn’t induce a failure, as a JUnit test and any associated code
 
 ---
 `@Test
@@ -46,7 +48,7 @@ The bug, as the before-and-after code change required to fix it
     return (sum) / (arr.length - 1);
   }`
   
-  ---
+ ---
   
  - After
 
