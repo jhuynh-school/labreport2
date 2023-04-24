@@ -76,4 +76,5 @@ static double averageWithoutLowest(double[] arr) {
 ```
 ---
 
-## Part 3:
+## Part 3: What did I learn in weeks 2 and 3?
+- The most important topics that I have learned during these weeks are using remote servers and using command lines. I have coded before so I was used to other topics such as bugs and symptoms because. The new topics such as using github to create repositories, scp to copy files from local to a remote server, and ssh to be able to access the remote server. 
