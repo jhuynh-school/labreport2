@@ -1,6 +1,6 @@
-## Part 1:
+## Part 1: String Server Web Server
 
-## Part 2: averageWithoutLowest
+## Part 2: averageWithoutLowest Bug
 ---
 
 - A failure-inducing input for the buggy program, as a JUnit test and any associated code
