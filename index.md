@@ -42,6 +42,10 @@ class StringServer {
 }
 ```
 
+Images of Adding to the list and the List itself
+- ![add](add.png)
+- ![list](list.png)
+
 - Which methods in your code are called?
 
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
