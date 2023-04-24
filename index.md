@@ -20,11 +20,11 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
  ---
 The symptom, as the output of running the tests
 ---
-Image of testReversed
-![testReversed](sameNumTest.png)
+- Image of testReversed
+- ![testReversed](sameNumTest.png)
 
-Image of testAWLSameNum
-![testAWLSameNum](differentNum.png)
+- Image of testAWLSameNum
+- ![testAWLSameNum](differentNum.png)
 
 The bug, as the before-and-after code change required to fix it
 ---
