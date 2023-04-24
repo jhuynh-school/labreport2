@@ -8,11 +8,7 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     String searchList = "";
-    String[] lst;
-    String display = "";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -47,10 +43,13 @@ Images of Adding to the list and the List itself
 - ![list](list.png)
 
 - Which methods in your code are called?
+- The methods in the code are called handleRequest the main method. main handles how the server will be setup and to use the Handler class. The method handleRequests handles adding new string queries onto a list and also printing that list.
 
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- The relevant methods to handleRequest is url because the information is received from there. When the url includes add-message the method handleRequest can see that the query is to added to the searchList. So the relevant field is searchList as it included added messages from the URL.
 
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- The value of searchList changes when the URL includes add-message as the query is added to the existing list of searchList. If no values within searchList is changes means that the URL did not include add-message to tell the method that a message wants to be added to searchList.
 
 ## Part 2: averageWithoutLowest Bug
 ---
