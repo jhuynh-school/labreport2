@@ -18,8 +18,8 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, ArrayExamples.reversed(input1));
   }`
  ---
+ 
 The symptom, as the output of running the tests
----
 - Image of testReversed
 - ![testReversed](sameNumTest.png)
 
