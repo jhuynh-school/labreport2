@@ -43,7 +43,43 @@ Images of Adding to the list and the List itself
 - ![list](list.png)
 
 - Which methods in your code are called?
-- The methods in the code are called handleRequest the main method. main handles how the server will be setup and to use the Handler class. The method handleRequests handles adding new string queries onto a list and also printing that list.
+- The methods in the code are called handleRequest and the main method. main handles how the server will be setup and to use the Handler class. The method handleRequests handles adding new string queries onto a list and also printing that list.
+
+handleRequest
+```
+public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return searchList;
+        } else if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                searchList = searchList + "\n" + parameters[1];
+                return parameters[1] + " has been added to the search list.";
+            }
+        } 
+        return "404 Not Found!";
+    }
+```
+
+If the URL passed into handleRequest ends with "/" it should output the list of string queries and in this example it would be,
+```
+Good Morning
+How are you today
+```
+
+main method
+```
+public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+```
 
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 - The relevant methods to handleRequest is url because the information is received from there. When the url includes add-message the method handleRequest can see that the query is to added to the searchList. So the relevant field is searchList as it included added messages from the URL.
